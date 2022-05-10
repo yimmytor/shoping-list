@@ -8,7 +8,7 @@ const ProductList = () => {
             <h1>Lista de Productos:</h1>            
             {productList ? 
                 <ul>
-                    {productList.map((product)=><li key={product.id }>{product.descripcion}</li>)}
+                    {productList.map((product)=><li key={product.idArticulo}>{product.descripcion + "-" + product.marca}</li>)}
                 </ul>
                 :
                 <span>Cargando...</span>
