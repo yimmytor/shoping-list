@@ -2,9 +2,9 @@ import Menu from "./Menu";
 
 const MainView = () => {
     return(
-        <div>
+        <main>
             <Menu />
-        </div>
+        </main>
     );
 }
 
