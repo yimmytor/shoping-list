@@ -5,9 +5,12 @@ const ProductList = () => {
     
     return (
         <>
-            <h1>Lista de Productos:</h1>            
+            
+            <h1> Lista de Productos:</h1>            
+
+            
             {productList ? 
-                <ul>
+                <ul>                    
                     {productList.map((product)=><li key={product.idArticulo}>{product.descripcion + "-" + product.marca}</li>)}
                 </ul>
                 :
@@ -18,3 +21,4 @@ const ProductList = () => {
 }
 
 export default ProductList;
+
